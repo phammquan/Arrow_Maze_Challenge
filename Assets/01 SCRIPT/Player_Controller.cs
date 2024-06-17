@@ -14,6 +14,8 @@ public class Player_Controller : Singleton<Player_Controller>
     float _update_dir;
     float zRotation;
     public float ZRotation => zRotation;
+    bool _isTouch = false;
+
 
 
 
@@ -80,14 +82,19 @@ public class Player_Controller : Singleton<Player_Controller>
     {
         _update_dir = dir;
     }
+    public void SetTouch(bool touch)
+    {
+        _isTouch = touch;
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Trap"))
+        if (_isTouch && other.gameObject.CompareTag("Trap") || other.gameObject.CompareTag("Platform"))
         {
             _isMoving = false;
             this.transform.GetChild(0).transform.eulerAngles = new Vector3(0, 0, _update_dir);
         }
     }
+
 
 }
