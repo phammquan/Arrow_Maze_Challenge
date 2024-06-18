@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] List<GameObject> _list_trap = new List<GameObject>();
     bool moved = false;
-    bool _finishGame = false;
-    bool _gameOver = false;
-    public bool FinishGame => _finishGame;
-    public bool GameOver => _gameOver;
+    bool _finish = false;
+    bool _game_over = false;
+    public bool _Finish => _finish;
+    public bool Game_Over => _game_over;
+
 
     void Update()
     {
@@ -44,13 +47,21 @@ public class GameManager : Singleton<GameManager>
     {
         if (finish)
         {
-            _finishGame = true;
+            _finish = true;
             Debug.Log("Finish");
+
         }
     }
-    public void Game_Over()
+    public void _Game_Over(bool over)
     {
-        _gameOver = true;
+        if (over)
+        {
+            _game_over = true;
+        }
         Debug.Log("Game Over");
+    }
+    IEnumerator eFinish()
+    {
+        yield return new WaitForSeconds(2f);
     }
 }

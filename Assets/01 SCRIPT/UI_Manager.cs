@@ -10,11 +10,15 @@ public class UI_Manager : MonoBehaviour
     void Start()
     {
         _btn_Restart.onClick.AddListener(() => Restart());
-
+        _btn_Home.onClick.AddListener(() => Home());
 
     }
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    void Home()
+    {
+        SceneManager.LoadScene(0);
     }
 }
