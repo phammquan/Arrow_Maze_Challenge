@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap_Controller : MonoBehaviour
+public class Trap_Controller : Singleton<Trap_Controller>
 {
     Collider2D _coli;
     bool _isMoving = false;
     [SerializeField] GameObject _prefab;
     [SerializeField] List<GameObject> _listPrefabs = new List<GameObject>();
+    bool moved = false;
+    public bool Moved => moved;
     void Start()
     {
         _coli = GetComponent<Collider2D>();
@@ -29,13 +31,15 @@ public class Trap_Controller : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
             if (touch.phase == TouchPhase.Began && hit.collider == _coli)
             {
-                _isMoving = true;
+                if (!_isMoving)
+                {
+                    _isMoving = true;
+                }
+                else
+                {
+                    _isMoving = false;
+                }
             }
-            else if (touch.phase == TouchPhase.Began)
-            {
-                _isMoving = false;
-            }
-
         }
     }
     void tunrOnDir()
@@ -79,6 +83,31 @@ public class Trap_Controller : MonoBehaviour
                     _listPrefabs[i].SetActive(false);
                 }
             }
+        }
+    }
+    public void move(int dir)
+    {
+        if (dir == 0)
+        {
+            this.transform.position += Vector3.up;
+            moved = true;
+        }
+        else if (dir == 1)
+        {
+            this.transform.position += Vector3.down;
+            moved = true;
+
+        }
+        else if (dir == 2)
+        {
+            this.transform.position += Vector3.left;
+            moved = true;
+
+        }
+        else if (dir == 3)
+        {
+            this.transform.position += Vector3.right;
+            moved = true;
         }
     }
 
