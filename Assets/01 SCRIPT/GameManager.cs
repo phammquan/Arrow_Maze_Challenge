@@ -7,7 +7,9 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] List<GameObject> _list_trap = new List<GameObject>();
     bool moved = false;
     bool _finishGame = false;
+    bool _gameOver = false;
     public bool FinishGame => _finishGame;
+    public bool GameOver => _gameOver;
 
     void Update()
     {
@@ -45,5 +47,10 @@ public class GameManager : Singleton<GameManager>
             _finishGame = true;
             Debug.Log("Finish");
         }
+    }
+    public void Game_Over()
+    {
+        _gameOver = true;
+        Debug.Log("Game Over");
     }
 }
