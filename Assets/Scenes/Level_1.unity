@@ -463,13 +463,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 657666331375527526, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+    - target: {fileID: 173837195201477237, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 160
       objectReference: {fileID: 0}
-    - target: {fileID: 657666331375527526, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+    - target: {fileID: 894825791011387895, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 894825791011387895, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -289
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633744464624079599, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 2838.6755
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633744464624079599, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -57.323334
       objectReference: {fileID: 0}
     - target: {fileID: 1840525505871099205, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_Pivot.x
@@ -551,33 +563,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4176461773677873373, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: TUT
-      value: 
-      objectReference: {fileID: 963152023}
-    - target: {fileID: 4176461773677873373, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: _TUT
-      value: 
-      objectReference: {fileID: 559384616}
-    - target: {fileID: 4176461773677873373, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: Close
-      value: 
-      objectReference: {fileID: 967713664}
-    - target: {fileID: 7879091982189966956, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+    - target: {fileID: 3208102244818103782, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 661
       objectReference: {fileID: 0}
-    - target: {fileID: 7879091982189966956, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+    - target: {fileID: 4663251597502978368, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: remaintime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286449449181571902, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_Text
+      value: 'Click on the red square to move, the square will move in the direction
+        of the white arrow.
+
+
+        This item is used to change the direction of
+        movement.
+
+
+        This item can be used to assist the red square in the
+        right direction
+
+
+        You only have 45 seconds to complete a level, try
+        your best'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533876361518493991, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384542368316511215, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8384542368316511215, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1896.1067
       objectReference: {fileID: 0}
     - target: {fileID: 8948472301595912279, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_Name
@@ -725,11 +754,6 @@ Transform:
   - {fileID: 1872857591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &559384616 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5540972998031129388, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-  m_PrefabInstance: {fileID: 341096190}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &599529834 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6980132854269672528, guid: 305f8149c4cc09f4caaf2b7cac1817b3, type: 3}
@@ -929,28 +953,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &963152023 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4878718923443173991, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-  m_PrefabInstance: {fileID: 341096190}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &967713664 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4408064385640116403, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-  m_PrefabInstance: {fileID: 341096190}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1133874455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8987698953259357935, guid: 0789fd26333121d4d95884cde6bbb85c, type: 3}
