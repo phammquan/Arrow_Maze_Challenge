@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (remaintime > 0)
+        if (remaintime > 0 && GameManager.Instance._Finish == false && GameManager.Instance.Game_Over == false)
         {
             remaintime -= Time.deltaTime;
         }
