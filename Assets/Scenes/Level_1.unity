@@ -463,26 +463,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 173837195201477237, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 894825791011387895, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 225
-      objectReference: {fileID: 0}
-    - target: {fileID: 894825791011387895, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -289
-      objectReference: {fileID: 0}
-    - target: {fileID: 1633744464624079599, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2838.6755
-      objectReference: {fileID: 0}
-    - target: {fileID: 1633744464624079599, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -57.323334
-      objectReference: {fileID: 0}
     - target: {fileID: 1840525505871099205, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -563,50 +543,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3208102244818103782, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 661
-      objectReference: {fileID: 0}
     - target: {fileID: 4663251597502978368, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: remaintime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6286449449181571902, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_Text
-      value: 'Click on the red square to move, the square will move in the direction
-        of the white arrow.
-
-
-        This item is used to change the direction of
-        movement.
-
-
-        This item can be used to assist the red square in the
-        right direction
-
-
-        You only have 45 seconds to complete a level, try
-        your best'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -119
-      objectReference: {fileID: 0}
-    - target: {fileID: 7245979531862459298, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1145
-      objectReference: {fileID: 0}
-    - target: {fileID: 7533876361518493991, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1896.1067
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 8948472301595912279, guid: 020b864451dfbfa439f9fc330142557c, type: 3}
       propertyPath: m_Name
